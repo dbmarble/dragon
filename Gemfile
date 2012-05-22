@@ -29,7 +29,9 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg'
-  gem 'therubyracer'
-  gem 'execjs'
+gem 'pg'
+gem 'therubyracer'
+gem 'execjs'
+
 end
+
