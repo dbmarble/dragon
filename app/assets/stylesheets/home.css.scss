@@ -1,3 +1,93 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+.content {
+  background-color: #fbfbfb;
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+
+}
+
+
+section#content {
+  float: center;
+}
+
+section#sidebar {
+  float:  right;
+  margin-right:  -20px;
+  width: 300px;
+}
+
+section#agendaemail {
+  float: center;
+  
+  table {
+    float: center;
+  }
+}
+
+section#sidebar {
+  background-color:  transparent;
+  -webkit-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border-radius:  10px;
+  color:  transparent;
+  font:  {
+    size:  0.8em;
+    weight:  normal;
+  }
+  line-height: 1.3em;
+  padding:  10px;
+  a,
+  a:link,
+  a:visited  {
+    color:  #666;
+    text-decoration:  underline;
+  }
+
+  a:hover,
+  a:active  {
+    color:  #bc471d;
+  }
+
+  section {
+  }
+
+  #functional_nav {
+    ul  {
+      list-style-type: none;
+      margin:  0;
+      padding:  0;
+    }
+  }
+
+  #upcoming_meetings {
+    header  {
+      background-color: #bc471d;
+      border-bottom: 5px solid #807c77;
+      margin:  10px -10px;
+      padding:  5px 10px 0 10px;
+      h1#upcoming {
+        background: transparent no-repeat scoll top left;
+        margin:  5px 0 0 0;
+        padding: 0;
+        text-indent: -999px;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+

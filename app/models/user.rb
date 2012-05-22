@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_many :meetings
 	rolify
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
@@ -8,4 +9,6 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :name, :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
+
+
 end

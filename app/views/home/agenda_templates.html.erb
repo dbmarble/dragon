@@ -1,0 +1,31 @@
+
+<div class="span6 offset3">
+<h1>Agenda Templates</h1>
+<h2>
+      Writing effective meeting agendas takes practice.
+      Check out a couple of agenda templates to get an
+      idea how you should structure your content to give
+      you the best chance of having an effective meeting.
+</h2>
+
+<br />
+
+<h2>
+    Get 2 FREE Agenda Templates ($97 value):
+    <%= simple_form_for(@agenda_email) do |f| %>
+        <%= f.error_notification %>
+
+
+        <div class="well">
+          <%= f.input :address, :placeholder => "Your Email:", :label =>"Don't worry, we hate spam too." %>
+        </div>
+
+        <div class="form-actions">
+          <%= f.button :submit, :value => "Show me them!"%>
+        </div>
+    <% end %>
+</h2>
+</div>
+
+
+

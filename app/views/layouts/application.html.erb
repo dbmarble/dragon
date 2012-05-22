@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Dragon" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Meetingfix" %></title>
     <meta name="description" content="">
     <meta name="author" content="">
     <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -25,14 +25,18 @@
         <div class="content">
            <div class="row">
             <div class="span12">
+              <section id="content">
               <%= render 'layouts/messages' %>
               <%= yield %>
+              </section>
             </div>
           </div>
-          <footer>
-          </footer>
         </div>
       </div> <!--! end of .container -->
+      <%= render 'layouts/footer'  %>
+      <footer>
+
+      </footer>
     </div> <!--! end of #main -->
   </body>
 </html>

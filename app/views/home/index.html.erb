@@ -1,4 +1,65 @@
-<h3>Home</h3>
-<% @users.each do |user| %>
-  <p>User: <%=link_to user.name, user %></p>
+
+
+<% if user_signed_in? %>
+
+  <p> Make an Agenda for one of my upcoming meetings: </p>
+
+  <%= current_user.email %>
+<% else %>
+
+    <div class="row hero-unit">
+      <h1>Streamline Meetings in Five Minutes</h1>
+
+      <h2>
+        The Meeting Management Tool Guaranteed
+        to Increase Meeting Effectiveness
+      </h2>
+      <h1>
+
+        <%= link_to "Sign up now!", new_prelaunch_email_path, class: "btn btn-large btn-success" %>
+      </h1>
+    </div>
+
+
+    <br />
+    <br />
+
+    <div class="bottom">
+      <table>
+        <td>
+          <h2>Plan and Schedule Meetings</h2>
+          <ul>
+            <li>Find the best time for meetings without countless emails</li>
+            <li>Integrate meeting schedules with outlook and google Calendar</li>
+          </ul>
+        </td>
+
+        <td>
+          <h2>Create Agendas Quickly</h2>
+          <ul>
+            <li>take the pain and time out of making agendas</li>
+            <li>Create a professional looking agenda in minutes</li>
+          </ul>
+        </td>
+        <td>
+          <h2>Take the Hassle Out of Taking Minutes</h2>
+          <ul>
+            <li>Quickly take meeting minutes with action points and followup dates</li>
+            <li>Jot down notes that make sense with worrying about formatting</li>
+            <li>Have professional looking minutes completed by the end of the meeting without missing a beat</li>
+          </ul>
+        </td>
+        <td>
+          <h2>Track and Follow-up on Action Points</h2>
+          <ul>
+            <li>Easily notify participants of action points and decisions</li>
+            <li>Quickly track action points with assignments and timelines</li>
+          </ul>
+        </td>
+      </table>
+
+    </div>
+
+
 <% end %>
+

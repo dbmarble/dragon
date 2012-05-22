@@ -1,0 +1,27 @@
+
+<div class="span6 offset3">
+  <h1>Meeting Minutes Templates</h1>
+  <h2>
+    Taking great meeting minutes takes practice.
+    Check out a couple of our meeting minutes templates to get an
+    idea how you should structure your content to give
+    you the best chance of having great results from your meeting.
+  </h2>
+
+  <br />
+
+  <h2>
+    Get 2 FREE Agenda Templates ($97 value):
+    <%= simple_form_for(@meeting_minutes_email) do |f| %>
+        <%= f.error_notification %>
+
+        <div class="well">
+          <%= f.input :address, :placeholder => "Your Email:", :label =>"Don't worry, we hate spam too." %>
+        </div>
+
+        <div class="form-actions">
+          <%= f.button :submit, :value => "Show me them!"%>
+        </div>
+    <% end %>
+  </h2>
+</div>

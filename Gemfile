@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'rails', '3.2.3'
-gem 'sqlite3'
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -16,3 +16,14 @@ gem "rolify", ">= 3.1.0"
 gem "bootstrap-sass", ">= 2.0.1"
 gem "simple_form"
 gem "rails-footnotes", ">= 3.7", :group => :development
+gem 'activeadmin'
+gem "meta_search"
+gem 'bloggy'
+
+group :development, :test do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end

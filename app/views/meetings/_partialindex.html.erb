@@ -1,0 +1,25 @@
+<% content_for :sidebar do %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Reason</th>
+    <th>Date</th>
+    <th>Start time</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @meetings.each do |meeting| %>
+  <tr>
+    <td><%= meeting.title %></td>
+    <td><%= meeting.reason %></td>
+    <td><%= meeting.date %></td>
+    <td><%= meeting.start_time %></td>
+
+
+  </tr>
+<% end %>
+</table>
+<% end %>
