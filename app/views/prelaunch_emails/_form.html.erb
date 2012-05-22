@@ -1,12 +1,15 @@
+<form class="well form-inline">
 <%= simple_form_for(@prelaunch_email) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
+  <div class="well form-inline" >
     <%= f.input :name %>
     <%= f.input :address %>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
+  <div>
+    <%= f.button 'submit' %>
   </div>
 <% end %>
+
+</form>

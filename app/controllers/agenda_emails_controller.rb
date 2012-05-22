@@ -40,14 +40,14 @@ class AgendaEmailsController < InheritedResources::Base
   # POST /meeting_minutes_templates
   # POST /meeting_minutes_templates.json
   def create
-    @agenda_email = AgendaEmail.new(params[:Agenda_email])
+    @agenda_email = AgendaEmail.new(params[:agenda_email])
 
     respond_to do |format|
       if @agenda_email.save
         format.html { redirect_to @agenda_email, notice: 'Thank you, have a great day!' }
         format.json { render json: @agenda_email, status: :created, location: @agenda_email }
       else
-        format.html { render action: "new" }
+        format.html { redirect_to agenda_templates_path  , notice: 'This Email is Invalid.' }
         format.json { render json: @agenda_email.errors, status: :unprocessable_entity }
       end
     end

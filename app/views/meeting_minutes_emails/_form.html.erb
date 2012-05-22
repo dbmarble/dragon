@@ -1,11 +1,12 @@
 <%= simple_form_for(@meeting_minutes_email) do |f| %>
   <%= f.error_notification %>
-
-  <div class="form-inputs">
+<form class="form-inline">
+  <div >
     <%= f.input :address %>
   </div>
 
-  <div class="form-actions">
+  <div>
     <%= f.button :submit %>
   </div>
+</form>
 <% end %>

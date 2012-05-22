@@ -47,7 +47,7 @@ def index
           format.html { redirect_to @meeting_minutes_email, notice: 'Thank you, have a great day!' }
           format.json { render json: @meeting_minutes_email, status: :created, location: @meeting_minutes_email }
         else
-          format.html { render action: "new" }
+          format.html { redirect_to meeting_minutes_templates_path  , notice: 'This Email is Invalid.' }
           format.json { render json: @meeting_minutes_email.errors, status: :unprocessable_entity }
         end
       end

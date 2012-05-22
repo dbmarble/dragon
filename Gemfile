@@ -20,18 +20,18 @@ gem 'activeadmin'
 gem "meta_search"
 gem 'bloggy'
 
-gem 'unicorn'
 
-gem 'capistrano'
 
 group :development, :test do
   gem 'sqlite3'
 end
 
 group :production do
-gem 'pg'
-gem 'therubyracer'
-gem 'execjs'
+  gem 'pg'
+  gem 'therubyracer'
+  gem 'execjs'
+  gem 'unicorn'
 
+  gem 'capistrano'
 end
 

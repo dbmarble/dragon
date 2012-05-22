@@ -1,10 +1,10 @@
 Dragon::Application.routes.draw do
 
   resources :prelaunch_emails
-
   resources :meeting_minutes_emails
-
   resources :agenda_emails
+
+
 
   match "/blog", to: 'root#blog'
   match "/agenda_templates", to: 'home#agenda_templates'
