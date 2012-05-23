@@ -28,8 +28,7 @@ end
 
 group :production do
   gem 'pg'
-  gem 'therubyracer'
-  gem 'execjs'
+  gem 'nodejs'
   gem 'unicorn'
 
   gem 'capistrano'

@@ -1,17 +1,5 @@
 class AgendaEmailsController < InheritedResources::Base
-  # GET /meeting_minutes_templates
-  # GET /meeting_minutes_templates.json
-  def index
-    @agenda_emails = AgendaEmail.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @agenda_emails }
-    end
-  end
-
-  # GET /meeting_minutes_templates/1
-  # GET /meeting_minutes_templates/1.json
   def show
     @agenda_email = AgendaEmail.find(params[:id])
 
@@ -44,8 +32,10 @@ class AgendaEmailsController < InheritedResources::Base
 
     respond_to do |format|
       if @agenda_email.save
+        Confirmation.agenda_template(@agenda_email).deliver
         format.html { redirect_to @agenda_email, notice: 'Thank you, have a great day!' }
         format.json { render json: @agenda_email, status: :created, location: @agenda_email }
+
       else
         format.html { redirect_to agenda_templates_path  , notice: 'This Email is Invalid.' }
         format.json { render json: @agenda_email.errors, status: :unprocessable_entity }

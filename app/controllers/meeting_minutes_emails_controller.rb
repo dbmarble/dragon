@@ -44,6 +44,7 @@ def index
 
       respond_to do |format|
         if @meeting_minutes_email.save
+          Confirmation.meeting_minutes_template(@meeting_minutes_email).deliver
           format.html { redirect_to @meeting_minutes_email, notice: 'Thank you, have a great day!' }
           format.json { render json: @meeting_minutes_email, status: :created, location: @meeting_minutes_email }
         else
