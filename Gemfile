@@ -27,7 +27,7 @@ end
 gem  'capistrano'
 
 group :production do
-  gem 'mysql2'
+  gem 'mysql2', '< 0.3'
   gem 'passenger'
 end
 
