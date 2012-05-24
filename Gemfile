@@ -28,6 +28,7 @@ gem  'capistrano'
 
 group :production do
   gem 'mysql2'
+  gem 'passenger'
 end
 
 
