@@ -20,8 +20,14 @@ gem 'activeadmin'
 gem "meta_search"
 gem 'bloggy'
 
-gem 'pg'
-gem 'unicorn'
-gem 'capistrano'
+group :development, :test do
+  gem 'sqlite3'
+end
+
+gem  'capistrano'
+
+group :production do
+  gem 'mysql2'
+end
 
 
