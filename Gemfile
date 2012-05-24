@@ -20,6 +20,8 @@ gem 'activeadmin'
 gem "meta_search"
 gem 'bloggy'
 
+gem 'unicorn'
+
 group :development, :test do
   gem 'sqlite3'
 end
