@@ -1,5 +1,7 @@
 Dragon::Application.routes.draw do
 
+  get "static_pages/effective_meeting"
+
   resources :prelaunch_emails
   resources :meeting_minutes_emails
   resources :agenda_emails
