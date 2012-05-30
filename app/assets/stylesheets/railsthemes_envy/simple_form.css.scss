@@ -1,0 +1,7 @@
+@import "base";
+
+select {
+  &.date, &.datetime, &.time {
+    display: inline;
+  }
+}

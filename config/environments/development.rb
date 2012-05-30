@@ -22,13 +22,13 @@ Dragon::Application.configure do
   config.action_mailer.default :charset => "utf-8"
 
   config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
-    port: 587,
-    domain: "meetingfix.com",
-    authentication: "plain",
-    enable_starttls_auto: true,
-    user_name: ENV["contact@meetingfix.com"],
-    password: ENV["W1ldc@ts"]
+      address: "smtp.gmail.com",
+      port: 587,
+      domain: "meetingfix.com",
+      user_name: ENV["contact@meetingfix.com"],
+      password: ENV["W1ldc@ts"],
+      authentication: "plain",
+      enable_starttls_auto: true,
   }
 
 

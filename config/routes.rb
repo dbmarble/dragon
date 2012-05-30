@@ -12,7 +12,8 @@ Dragon::Application.routes.draw do
   match "/agenda_templates", to: 'home#agenda_templates'
   match "/contact", to: 'home#contact'
   match "/about", to: 'home#about'
-  match "meeting_minutes_templates", to: 'home#meeting_minutes_templates'
+  match "/meeting_minutes_templates", to: 'home#meeting_minutes_templates'
+  match "/articles", to: 'static_pages#effective_meeting'
 
   ActiveAdmin.routes(self)
 
@@ -30,4 +31,6 @@ Dragon::Application.routes.draw do
 
 
 
+  match 'railsthemes/landing' => 'railsthemes#landing'
+  match 'railsthemes/inner' => 'railsthemes#inner'
 end

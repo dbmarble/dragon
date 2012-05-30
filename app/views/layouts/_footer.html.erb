@@ -1,13 +1,33 @@
-<footer class="footer">
-  <small>
-    &copy 2012 meetingfix.com   All Rights Reserved
-  </small>
-  <nav>
-    <ul>
-      <li><%= link_to "About",   about_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
-      <li><%= link_to "Agenda Templates", agenda_templates_path %></li>
-      <li><%= link_to "Meeting Minutes Templates", meeting_minutes_templates_path %></li>
-    </ul>
-  </nav>
-</footer>
+<!-- container -->
+<div class="container" id="footer">
+  <div class="row">
+    <div class="two columns">
+      <h4>MeetingFix.com </h4>
+      <p><a href="mailto:contact@meetingfix.com">contact@meetingfix.com</a><br />480-721-2827</p>
+
+    </div>
+    <div class="four columns">
+      <h4>Why MeetingFix?</h4>
+      <p>We were sick meetings
+        that go no where, and end up being a waste of time.
+        Everyone knows that agendas, meeting minutes, and followups
+        can greatly effect the outcome of a meeting, we just
+        made it easier to do.</p>
+    </div>
+    <div class="five columns text-right">
+      <ul class="nav-bar">
+        <li><%= link_to "About", about_path %></li>
+        <li><%=	link_to "Benefits", "#" %></li>
+        <li><%= link_to "Contact", contact_path %></li>
+        <li><%= link_to "Agenda Templates", agenda_templates_path %></li>
+        <li><%= link_to "Meeting Minutes Templates", meeting_minutes_templates_path %></li>
+        <li><%= link_to "Articles", articles_path %></li>
+      </ul>
+
+
+      <a href="#" title="" class="button-custom"><span>Try it Free for 15 days</span></a>
+      <p class="copyright">Copyright © 2012 Meetingfix.com. All Rights Reserved.</p>
+    </div>
+  </div>
+</div>
+<!-- end container -->
