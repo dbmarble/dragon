@@ -64,7 +64,7 @@ Dragon::Application.configure do
   config.action_mailer.default_url_options = { :host => 'example.com' }
   # ActionMailer Config
   # Setup for production - deliveries, no errors raised
-  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.delivery_method = :sendmail
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.default :charset => "utf-8"
@@ -72,7 +72,7 @@ Dragon::Application.configure do
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
     port: 587,
-    domain: "google.com",
+    domain: "meetingfix.com",
     user_name: ENV["contact@meetingfix.com"],
     password: ENV["W1ldc@ts"],
     authentication: "plain",
