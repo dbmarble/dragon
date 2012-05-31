@@ -6,7 +6,7 @@ class PrelaunchEmailsController < InheritedResources::Base
 
     respond_to do |format|
       if @prelaunch_email.save
-        Confirmation.prelaunch(@prelaunch_email).deliver
+        ConfirmationMailer.prelaunch_email(@prelaunch_email).deliver
         format.html { redirect_to @prelaunch_email, notice: 'Thank you, have a great day!' }
         format.json { render json: @prelaunch_email, status: :created, location: @prelaunch_email }
       else

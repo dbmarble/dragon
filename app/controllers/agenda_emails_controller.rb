@@ -32,7 +32,7 @@ class AgendaEmailsController < InheritedResources::Base
 
     respond_to do |format|
       if @agenda_email.save
-        Confirmation.agenda_template(@agenda_email).deliver
+        ConfirmationMailer.agenda_email(@agenda_email).deliver
         format.html { redirect_to @agenda_email, notice: 'Thank you, have a great day!' }
         format.json { render json: @agenda_email, status: :created, location: @agenda_email }
 
