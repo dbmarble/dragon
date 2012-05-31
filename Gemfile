@@ -20,7 +20,6 @@ gem 'activeadmin'
 gem "meta_search"
 gem 'bloggy'
 
-gem 'unicorn'
 
 group :development, :test do
   gem 'sqlite3'
@@ -29,6 +28,6 @@ end
 gem  'capistrano'
 
 group :production do
-  gem 'pg'
+  gem 'mysql2'
 end
 
