@@ -72,7 +72,7 @@ Dragon::Application.configure do
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
     port: 587,
-    domain: "meetingfix.com",
+    domain: "google.com",
     user_name: ENV["contact@meetingfix.com"],
     password: ENV["W1ldc@ts"],
     authentication: "plain",
