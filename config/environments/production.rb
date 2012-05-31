@@ -73,9 +73,9 @@ Dragon::Application.configure do
     address: "smtp.gmail.com",
     port: 587,
     domain: "meetingfix.com",
-    user_name: ENV["contact"],
-    password: ENV["W1ldc@ts"],
     authentication: "plain",
+    user_name: "contact",
+    password: "W1ldc@ts",
     enable_starttls_auto: true,
   }
 
