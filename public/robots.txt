@@ -3,3 +3,4 @@
 
 User-agent: *
 
+Sitemap: http://www.meetingfix.com/sitemap_index.xml.gz

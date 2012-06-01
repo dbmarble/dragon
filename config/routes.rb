@@ -1,19 +1,20 @@
 Dragon::Application.routes.draw do
 
-  get "static_pages/effective_meeting"
+
 
   resources :prelaunch_emails
   resources :meeting_minutes_emails
   resources :agenda_emails
 
-
-
-  match "/blog", to: 'root#blog'
+  match "/about", to: 'home#about'
   match "/agenda_templates", to: 'home#agenda_templates'
   match "/contact", to: 'home#contact'
-  match "/about", to: 'home#about'
   match "/meeting_minutes_templates", to: 'home#meeting_minutes_templates'
+  match "/pricing", to: 'home#pricing'
+  match "/features", to: 'home#features'
+
   match "/articles", to: 'static_pages#effective_meeting'
+
 
   ActiveAdmin.routes(self)
 
