@@ -17,7 +17,7 @@ SitemapGenerator::Sitemap.create do
   #
 
 
-     add about_path, :priority => 0.3, :changefreq => 'weekly'
+  add about_path, :priority => 0.3, :changefreq => 'weekly'
 
 
 
