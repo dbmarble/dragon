@@ -1,4 +1,4 @@
 class StaticPagesController < ApplicationController
-  def effective_meeting
+  def articles
   end
 end

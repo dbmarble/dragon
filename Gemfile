@@ -20,6 +20,7 @@ gem 'activeadmin'
 gem "meta_search"
 gem 'bloggy'
 gem 'sitemap_generator'
+gem 'meta-tags', :require => 'meta_tags'
 
 
 

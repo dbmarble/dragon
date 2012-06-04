@@ -2,9 +2,9 @@ require 'spec_helper'
 
 describe StaticPagesController do
 
-  describe "GET 'effective_meeting'" do
+  describe "GET 'articles'" do
     it "returns http success" do
-      get 'effective_meeting'
+      get 'articles'
       response.should be_success
     end
   end

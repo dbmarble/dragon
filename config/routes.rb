@@ -13,7 +13,10 @@ Dragon::Application.routes.draw do
   match "/pricing", to: 'home#pricing'
   match "/features", to: 'home#features'
 
-  match "/articles", to: 'static_pages#effective_meeting'
+  match "/articles", to: 'static_pages#articles'
+
+
+  match "/jquery_ui", to: 'railsthemes#jquery_ui'
 
 
   ActiveAdmin.routes(self)

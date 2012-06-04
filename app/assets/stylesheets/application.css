@@ -8,8 +8,8 @@
  *= require_tree ./railsthemes_envy
  *= require railsthemes_envy_ie
  *= require railsthemes_envy_overrides
+ *= require static_pages
  *= require_self
 */
-
 
 
