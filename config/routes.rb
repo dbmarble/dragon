@@ -1,11 +1,6 @@
 Dragon::Application.routes.draw do
 
-
-
-  resources :prelaunch_emails
-  resources :meeting_minutes_emails
-  resources :agenda_emails
-
+  match "/prelaunch_list", to: 'static_pages#prelaunch_list'
   match "/about", to: 'home#about'
   match "/agenda_templates", to: 'home#agenda_templates'
   match "/contact", to: 'home#contact'

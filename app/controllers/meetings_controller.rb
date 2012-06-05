@@ -20,7 +20,7 @@ class MeetingsController < ApplicationController
     @meeting = Meeting.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html # prelaunch_list.html.erb
       format.json { render json: @meeting }
     end
   end

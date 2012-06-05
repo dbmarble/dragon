@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   end
 
   def agenda_templates
-    @agenda_email = AgendaEmail.new
+
   end
 
   def contact
@@ -19,7 +19,7 @@ class HomeController < ApplicationController
   end
 
   def meeting_minutes_templates
-    @meeting_minutes_email = MeetingMinutesEmail.new
+
   end
 
   def pricing
