@@ -14,7 +14,7 @@ Dragon::Application.configure do
   config.action_controller.perform_caching = false
 
   # ActionMailer Config
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { host: "localhost:3000" }
   config.action_mailer.delivery_method = :smtp
   # change to false to prevent email from being sent during development
   config.action_mailer.perform_deliveries = true
@@ -26,11 +26,10 @@ Dragon::Application.configure do
       port: 587,
       domain: "meetingfix.com",
       authentication: "plain",
-      user_name: "contact",
-      password: "Taiwan84",
-      enable_starttls_auto: true
+      enable_starttls_auto: true,
+      user_name: "contact@meetingfix.com",
+      password: "Taiwan84"
   }
-
 
 
   # Print deprecation notices to the Rails logger

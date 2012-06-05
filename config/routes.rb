@@ -1,5 +1,11 @@
 Dragon::Application.routes.draw do
 
+  resources :minutes_samples
+
+  resources :prelaunches
+
+  resources :agenda_samples
+
   match "/prelaunch_list", to: 'static_pages#prelaunch_list'
   match "/about", to: 'home#about'
   match "/agenda_templates", to: 'home#agenda_templates'
