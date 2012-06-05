@@ -1,18 +1,18 @@
 <div class="span8 offset1 fluid hero-unit">
   <h1>We're Launching Soon</h1>
 
-  We will notify you when we launch, it wont be too long now...
+  <h3>We will notify you when we launch, it wont be too long now...  </h3>
 
   <%= simple_form_for(@prelaunch) do |f| %>
     <%= f.error_notification %>
 
     <div class="form-inputs">
-      <%= f.input :name %>
-      <%= f.input :email %>
+      <%= f.input :name, :placeholder =>  'Your Name:' , :label =>"Don't worry, we hate spam too!" %>
+      <%= f.input :email, :placeholder =>  'Your Email:', :label =>"*"  %>
     </div>
 
     <div class="form-actions">
-      <%= f.button :submit %>
+      <%= f.submit 'LET ME KNOW' %>
     </div>
 <% end %>
 

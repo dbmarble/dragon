@@ -1,9 +1,9 @@
 
-<% title 'agenda Templates' %>
+<% title 'Agenda Templates' %>
 
-<% description 'agenda Templates, create a great agenda in five minutes' %>
+<% description 'Agenda Template, create a great agenda in five minutes' %>
 
-<div class="span8 offset1 fluid hero-unit">
+<div>
   <h1>Agenda Templates</h1>
   <h2>
     Writing effective meeting agendas takes practice.
@@ -15,17 +15,17 @@
   <br />
 
   <h2>
-    Get 2 FREE Agenda Templates ($97 value):
+    Get A FREE Agenda Template ($37 value):
 
 <%= simple_form_for(@agenda_sample) do |f| %>
     <%= f.error_notification %>
 
     <div class="form-inputs">
-      <%= f.input :email %>
+      <%= f.input :email, :placeholder =>  'Your Email:', :label =>"Don't worry, we hate spam too!" %>
     </div>
 
     <div class="form-actions">
-      <%= f.button :submit %>
+      <%= f.submit 'SEND IT TO ME' %>
     </div>
 <% end %>
 

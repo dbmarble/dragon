@@ -28,7 +28,7 @@ Dragon::Application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = true
+  config.force_ssl = true
 
   # See everything in the log (default is :info)
   # config.log_level = :debug
@@ -70,13 +70,13 @@ Dragon::Application.configure do
   config.action_mailer.default :charset => "utf-8"
 
   config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
-    port: 587,
-    domain: "meetingfix.com",
-    authentication: "plain",
-    enable_starttls_auto: true,
-    user_name: ENV["contact"],
-    password: ENV["Taiwan84"]
+      address: "smtp.gmail.com",
+      port: 587,
+      domain: "meetingfix.com",
+      authentication: "plain",
+      enable_starttls_auto: true,
+      user_name: "david@meetingfix.com",
+      password: "Taiwan84"
   }
 
 

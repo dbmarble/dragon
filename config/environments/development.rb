@@ -27,7 +27,7 @@ Dragon::Application.configure do
       domain: "meetingfix.com",
       authentication: "plain",
       enable_starttls_auto: true,
-      user_name: "contact@meetingfix.com",
+      user_name: "david@meetingfix.com",
       password: "Taiwan84"
   }
 

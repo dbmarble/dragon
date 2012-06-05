@@ -5,7 +5,7 @@
 
 
 
-<div class="span8 offset1 fluid hero-unit">
+<div>
   <h1>Meeting Minutes Templates</h1>
   <h2>
     Taking great meeting minutes takes practice.
@@ -17,17 +17,17 @@
   <br />
 
   <h2>
-    Get 2 FREE Meeting Minutes Templates ($97 value):
+    Get a FREE Meeting Minutes Template ($37 value):
 
 <%= simple_form_for(@minutes_sample) do |f| %>
     <%= f.error_notification %>
 
     <div class="form-inputs">
-      <%= f.input :email %>
+      <%= f.input :email, :placeholder =>  'Your Email:', :label =>"Don't worry, we hate spam too!"  %>
     </div>
 
     <div class="form-actions">
-      <%= f.button :submit %>
+      <%= f.submit 'SEND IT TO ME' %>
     </div>
 <% end %>
 

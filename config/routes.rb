@@ -6,7 +6,7 @@ Dragon::Application.routes.draw do
 
   resources :agenda_samples
 
-  match "/prelaunch_list", to: 'static_pages#prelaunch_list'
+  match "/prelaunch_list", to: 'prelaunches#new'
   match "/about", to: 'home#about'
   match "/agenda_templates", to: 'home#agenda_templates'
   match "/contact", to: 'home#contact'
