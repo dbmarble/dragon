@@ -1,17 +1,12 @@
-$linkColor: black;
+$linkColor: #5245ff;
+$Color: #000000;
 $navbarHeight: 40px;
-$navbarBackground: #c8e5c1;
-$navbarBackgroundHighlight: #a3e38b;
-$navbarLinkColor: #000000;
+$navbarBackground: #87e5c1;
+$navbarBackgroundHighlight: #5fec55;
+$navbarLinkColor: white;
 $heroUnitBackground: #ffffff;
-$bodyBackground: #b5e0e5;
+$bodyBackground: #dcfdeb;
 $navbarLinkColor: #000000;
-
-
-
-
-
-
 
 
 
@@ -21,14 +16,17 @@ $navbarLinkColor: #000000;
 
 
 
+
 html {
   overflow-y: scroll;
 }
 
 body {
   padding-top: 60px;
-
 }
+
+
+
 
 section {
   overflow: auto;
@@ -41,10 +39,27 @@ textarea {
 
 .center {
   text-align: center;
+  @include box-shadow(#{0 2px 5px rgba(0,0,0,.25) inset, 0 -2px 5px rgba(0,0,0,.25) inset});
+
   h1 {
     margin-bottom: 10px;
   }
+
+  a {
+    color: white;
+    font-size: 30px;
+    font-family: "ProximaNova", sans-serif;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+
+  try-now {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
+
+
 
 /* typography */
 
