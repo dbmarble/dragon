@@ -1,59 +1,17 @@
 <!DOCTYPE html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if IE 9]>    <html class="ie9" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8" />
-    <!-- Set the viewport width to device width for mobile -->
-    <meta name="viewport" content="width=device-width" />
-
-    <title>MeetingFix <%= title = (yield :title); title.blank? ? "" : title %></title>
-    <meta name="description" content="<%= description = (yield :description) %>" />
-
-    <%= stylesheet_link_tag "application" %>
-    <!-- IE Fix for HTML5 Tags -->
-    <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
-    <%= javascript_include_tag "application" %>
-    <%= csrf_meta_tags %>
-    <%= yield :head %>
-    <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-31293596-1']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
-    <meta name="google-site-verification" content="UMAq2iEGxG2YaI6WcclcY5pvx4ghcx4qWWRlYQakvyI" />
-  </head>
-  <body>
-    <%= render 'layouts/header' %>
-    <div class="container" id="main">
-      <div class="row inside">
-        <%- if content_for? :sidebar %>
-          <div class="three columns">
-            <%= yield :sidebar %>
-          </div>
-          <div class="nine columns">
-            <%= render 'layouts/flash', :flash => flash %>
-            <%= yield %>
-          </div>
-        <%- else %>
-          <div class="twelve columns">
-            <%= render 'layouts/flash', :flash => flash %>
-            <%= yield %>
-          </div>
-        <%- end %>
-      </div>
-    </div>
-    <%= render 'layouts/footer' %>
-  </body>
+<html>
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
+</head>
+<body>
+<%= render 'layouts/header' %>
+<div class="container">
+  <%= yield %>
+  <%= render 'layouts/footer' %>
+</div>
+</body>
 </html>

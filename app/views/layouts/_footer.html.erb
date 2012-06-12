@@ -1,32 +1,13 @@
-<!-- container -->
-<div class="container" id="footer">
-  <div class="row">
-    <div class="two columns">
-      <h4>MeetingFix.com </h4>
-      <p><a href="mailto:contact@meetingfix.com">contact@meetingfix.com</a><br />480-269-7658</p>
+<footer class="footer">
+  <small>
+    Copyright © 2012 Meetingfix.com. All Rights Reserved.
+  </small>
+  <nav>
+    <ul class="nav-bar">
+      <li><%= link_to "Agenda Templates", new_agenda_sample_path %></li>
+      <li><%= link_to "Meeting Minutes Templates", new_minutes_sample_path %></li>
+      <li><%= link_to "Articles", articles_path %></li>
+    </ul>
+  </nav>
+</footer>
 
-    </div>
-    <div class="four columns">
-      <h4>Why MeetingFix?</h4>
-      <p>We were sick meetings
-        that go no where, and end up being a waste of time.
-        Everyone knows that agendas, meeting minutes, and followups
-        can greatly effect the outcome of a meeting, we just
-        made it easier to do.</p>
-    </div>
-    <div class="five columns text-right">
-      <ul class="nav-bar">
-        <li><%= link_to "About", about_path %></li>
-        <li><%=	link_to "Benefits", "#" %></li>
-        <li><%= link_to "Contact", contact_path %></li>
-        <li><%= link_to "Agenda Templates", new_agenda_sample_path %></li>
-        <li><%= link_to "Meeting Minutes Templates", new_minutes_sample_path %></li>
-        <li><%= link_to "Articles", articles_path %></li>
-      </ul>
-
-      <a href="/prelaunch_list" title="" class="button-custom"><span>Sign up for the Launch List</span></a>
-      <p class="copyright">Copyright © 2012 Meetingfix.com. All Rights Reserved.</p>
-    </div>
-  </div>
-</div>
-<!-- end container -->

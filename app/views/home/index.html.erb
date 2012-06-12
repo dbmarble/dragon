@@ -9,8 +9,9 @@ through Meeting Optimization' %>
   <%= current_user.email %>
 <% else %>
 
-    <div class="fluid hero-unit">
+    <div class="center hero-unit">
       <h1>Great Meetings Made Easy</h1>
+
 
       <h2>
         The Meeting Management Tool Guaranteed
@@ -18,10 +19,10 @@ through Meeting Optimization' %>
       </h2>
 
 
-      <h1>
-        <%= button_to "Try It Out!", prelaunch_list_path %>
+      <h1 class="btn btn-large btn-warning">
+        <%= link_to "Try Now!", prelaunch_list_path %>
       </h1>
-      <h4 id="home_center">
+      <h4>
         Meetingfix is an application that lets you schedule meetings,
         create agendas, take meeting minutes, track action points, and
         follow-up on meeting assignments easily.

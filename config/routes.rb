@@ -13,6 +13,8 @@ Dragon::Application.routes.draw do
   match "/meeting_minutes_templates", to: 'home#meeting_minutes_templates'
   match "/pricing", to: 'home#pricing'
   match "/features", to: 'home#features'
+  match "/articles/how_to_make_a_meeting_agenda", to: 'static_pages#agenda_how_to'
+  match "/articles/How_to_run_an_effective_meeting", to: 'static_pages#effective_meeting'
 
   match "/articles", to: 'static_pages#articles'
 

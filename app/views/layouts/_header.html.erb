@@ -1,45 +1,29 @@
-<!-- container -->
-<div class="container" id="header">
-  <div class="row">
-    <div class="three columns" id="logo">
-      <h1>MeetingFix</h1>
-    </div>
-    <div class="five columns offset-by-three">
-      <ul class="nav-bar">
+<header class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <div class="brand">
+
+      <%= link_to "MeetingFix", root_path %>
+      </div>
+      <nav>
+      <ul class="nav pull-right">
         <% if user_signed_in? %>
-            <li>
-              <%= link_to('Logout', destroy_user_session_path, :method=>'delete') %>
-            </li>
-            <li>
-              <%= link_to 'Meetings', user_meetings_path(current_user) %>
-            </li>
-            <li>
-              <%= link_to('Edit account', edit_user_registration_path) %>
-            </li>
+            <li><%= link_to('Logout', destroy_user_session_path, :method=>'delete') %></li>
+            <li><%= link_to 'Meetings', user_meetings_path(current_user) %></li>
+            <li><%= link_to('Edit account', edit_user_registration_path) %></li>
             <% if current_user.has_role? :admin %>
-                <li>
-                  <%= link_to('Admin', users_path) %>
-                </li>
-
+                <li><%= link_to('Admin', users_path) %></li>
             <% end %>
-
         <% else %>
-
-            <li>
-              <%= link_to 'Home ', root_path %>
-            </li>
-            <li>
-              <%= link_to 'About', about_path %>
-            </li>
-
+            <li><%= link_to 'Home', root_path %></li>
+            <li><%= link_to 'Tour', "#" %></li>
+            <li><%= link_to 'Pricing', pricing_path %></li>
+            <li><%	link_to "FAQ", "#" %></li>
+            <li><%= link_to "Contact Us", contact_path %></li>
+            <li><%= link_to 'About Us', about_path %></li>
         <% end %>
-
-
       </ul>
-    </div>
-    <div class="four columns text-center button-custom">
-      <%= link_to('Sign Up', prelaunch_list_path )%>
+      </nav>
     </div>
   </div>
-</div>
-<!-- end container -->
+</header>
