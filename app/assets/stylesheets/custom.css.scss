@@ -4,9 +4,13 @@ $navbarHeight: 40px;
 $navbarBackground: #87e5c1;
 $navbarBackgroundHighlight: #5fec55;
 $navbarLinkColor: white;
+
 $heroUnitBackground: #ffffff;
 $bodyBackground: #dcfdeb;
 $navbarLinkColor: #000000;
+
+
+
 
 
 
@@ -23,7 +27,9 @@ html {
 
 body {
   padding-top: 60px;
+
 }
+
 
 
 
@@ -69,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  font-family:  Georgia1, Georgia, serif;
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
@@ -98,7 +105,7 @@ p {
 #logo {
   float: left;
   margin-right: 10px;
-  font-size: 1.7em;
+  font-size: 35px;
   color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
