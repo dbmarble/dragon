@@ -1,6 +1,7 @@
 # Set the host name for URL creation
 SitemapGenerator::Sitemap.default_host = "http://www.meetingfix.com"
 
+SitemapGenerator::Sitemap.sitemaps_path = 'shared/'
 
 SitemapGenerator::Sitemap.create do
   # Put links creation logic here.
