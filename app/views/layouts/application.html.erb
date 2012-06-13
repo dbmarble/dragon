@@ -9,6 +9,7 @@
 </head>
 <body>
 <%= render 'layouts/header' %>
+<%= render 'layouts/flash', :flash => flash %>
 <div class="container">
   <%= yield %>
   <%= render 'layouts/footer' %>

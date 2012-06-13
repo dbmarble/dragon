@@ -36,8 +36,7 @@ Dragon::Application.routes.draw do
     resources :meetings
   end
 
+  match "/articles/what_is_a_meeting_agenda", to: 'static_pages#what_is_a_meeting_agenda'
+  match "/articles/how_to_run_an_effective_meeting", to: 'static_pages#effective_meeting'
 
-
-  match 'railsthemes/landing' => 'railsthemes#landing'
-  match 'railsthemes/inner' => 'railsthemes#inner'
 end

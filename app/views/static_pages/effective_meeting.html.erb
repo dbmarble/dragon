@@ -1,15 +1,9 @@
-<% title 'Articles' %>
-<% description 'Learn to have better meetings'%>
+<% title '' %>
+<% description ''%>
+<div class="article hero-unit">
 
-<%= content_for :sidebar do %>
-    <h2 class="page-title">Articles</h2>
-    <ul class="nav-inside">
-      <li><a href="/articles/how_to_make_a_meeting_agenda">How to Create a Great Meeting Agenda</a></li>
-      <li><a class="active" href="/articles/How_to_run_an_effective_meeting">How to Run an Effective Meeting</a></li>
-    </ul>
-<% end %>
-<div class="articles">
-  <h3>How to run an effective meeting</h3>
+  <h1>How to run an effective meeting</h1>
+  <br />
   <p>
     Keeping the focus of every individual is the biggest problem in the
     occasion of holding meetings. This comes in when the subject is not
@@ -90,5 +84,9 @@
     after the meeting.
 
   </p>
+  <br />
+  <br />
 
+
+  <%= render :partial => "agenda_samples/new" %>
 </div>

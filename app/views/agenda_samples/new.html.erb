@@ -3,7 +3,7 @@
 
 <% description 'Agenda Template, create a great agenda in five minutes' %>
 
-<div>
+<div class="hero-unit center">
   <h1>Agenda Templates</h1>
   <h2>
     Writing effective meeting agendas takes practice.
@@ -15,17 +15,14 @@
   <br />
 
   <h2>
-    Get A FREE Agenda Template ($37 value):
+    Get A FREE Agenda Template ($83 value):
 
 <%= simple_form_for(@agenda_sample) do |f| %>
     <%= f.error_notification %>
 
-    <div class="form-inputs">
+    <div class="well form-vertical">
       <%= f.input :email, :placeholder =>  'Your Email:', :label =>"Don't worry, we hate spam too!" %>
-    </div>
-
-    <div class="form-actions">
-      <%= f.submit 'SEND IT TO ME' %>
+      <button type="submit" class="btn">SEND IT TO ME</button>
     </div>
 <% end %>
 

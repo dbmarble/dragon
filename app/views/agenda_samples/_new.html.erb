@@ -1,0 +1,17 @@
+<div>
+
+    <h2>
+      Get A FREE Agenda Template ($83 value):
+
+      <%= simple_form_for(@agenda_sample) do |f| %>
+          <%= f.error_notification %>
+
+          <div class="well form-vertical">
+            <%= f.input :email, :placeholder =>  'Your Email:', :label =>"Don't worry, we hate spam too!" %>
+            <button type="submit" class="btn">SEND IT TO ME</button>
+          </div>
+      <% end %>
+
+    </h2>
+
+</div>

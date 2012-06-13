@@ -13,11 +13,11 @@
     <%= f.error_notification %>
 
   <form class="well form-vertical">
-    <input type="text" class="input-small" placeholder="Name">
+    <%= f.input :name, :placeholder =>  'Your Name:', :label =>"*" %>
     <br />
     <br />
 
-    <input type="text" class="input-small" placeholder="Email"><br /> <br />
+    <%= f.input :email, :placeholder =>  'Your Email:', :label =>"Don't worry, we hate spam too!" %><br /> <br />
     <button type="submit" class="btn">Let me know</button>
   </form>
 <% end %>

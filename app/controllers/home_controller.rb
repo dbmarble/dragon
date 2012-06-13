@@ -2,10 +2,6 @@ class HomeController < ApplicationController
   def about
   end
 
-  def agenda_templates
-
-  end
-
   def contact
   end
 
@@ -18,14 +14,8 @@ class HomeController < ApplicationController
     end
   end
 
-  def meeting_minutes_templates
-
-  end
-
   def pricing
   end
 
-  def features
-  end
 end
 
