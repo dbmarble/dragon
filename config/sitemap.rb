@@ -1,6 +1,7 @@
 # Set the host name for URL creation
 SitemapGenerator::Sitemap.default_host = "http://www.meetingfix.com"
 
+
 SitemapGenerator::Sitemap.create do
   # Put links creation logic here.
   #
@@ -15,29 +16,30 @@ SitemapGenerator::Sitemap.create do
   #
   # Examples:
   #
+  # Add '/articles'
+  #
+  #   add articles_path, :priority => 0.7, :changefreq => 'daily'
+  #
+  # Add all articles:
+  #
+  #   Article.find_each do |article|
+  #     add article_path(article), :lastmod => article.updated_at
+  #   end
 
 
-  add about_path, :priority => 0.3, :changefreq => 'weekly'
-
-
-
-  add agenda_templates_path, :priority => 0.9, :changefreq => 'weekly'
-
-
-
-  add contact_path, :priority => 0.5, :changefreq => 'weekly'
-
-
-
-  add meeting_minutes_templates_path, :priority => 0.9, :changefreq => 'weekly'
-
-
-
-  add pricing_path, :priority => 0.5, :changefreq => 'weekly'
-
-
-
-  add articles_path, :priority => 0.7, :changefreq => 'weekly'
-
+  add articles_path, :priority => 0.7, :changefreq => 'daily'
+  add how_to_make_a_meeting_agenda_path, :priority => 0.7, :changefreq => 'daily'
+  add what_is_a_meeting_agenda_path, :priority => 0.7, :changefreq => 'daily'
+  add how_to_run_an_effective_meeting_path, :priority => 0.7, :changefreq => 'daily'
+  add why_take_meeting_minutes_path, :priority => 0.7, :changefreq => 'daily'
+  add important_aspects_to_consider_for_meeting_path, :priority => 0.7, :changefreq => 'daily'
+  add prelaunch_list_path, :priority => 0.7, :changefreq => 'daily'
+  add about_path, :priority => 0.7, :changefreq => 'daily'
+  add contact_path, :priority => 0.7, :changefreq => 'daily'
+  add pricing_path, :priority => 0.7, :changefreq => 'daily'
+  add tour_path, :priority => 0.7, :changefreq => 'daily'
+  add new_agenda_sample_path, :priority => 0.7, :changefreq => 'daily'
+  add new_minutes_sample_path, :priority => 0.7, :changefreq => 'daily'
 
 end
+

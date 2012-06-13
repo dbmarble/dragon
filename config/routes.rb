@@ -8,19 +8,9 @@ Dragon::Application.routes.draw do
 
   match "/prelaunch_list", to: 'prelaunches#new'
   match "/about", to: 'home#about'
-  match "/agenda_templates", to: 'home#agenda_templates'
   match "/contact", to: 'home#contact'
-  match "/meeting_minutes_templates", to: 'home#meeting_minutes_templates'
   match "/pricing", to: 'home#pricing'
-  match "/features", to: 'home#features'
-  match "/articles/how_to_make_a_meeting_agenda", to: 'static_pages#agenda_how_to'
-  match "/articles/How_to_run_an_effective_meeting", to: 'static_pages#effective_meeting'
-
-  match "/articles", to: 'static_pages#articles'
-
-
-  match "/jquery_ui", to: 'railsthemes#jquery_ui'
-
+  match "/tour", to: 'home#tour'
 
   ActiveAdmin.routes(self)
 
@@ -36,7 +26,11 @@ Dragon::Application.routes.draw do
     resources :meetings
   end
 
-  match "/articles/what_is_a_meeting_agenda", to: 'static_pages#what_is_a_meeting_agenda'
-  match "/articles/how_to_run_an_effective_meeting", to: 'static_pages#effective_meeting'
+  match "/articles", to: 'static_pages#articles'
+  match "how_to_make_a_meeting_agenda", to: 'static_pages#agenda_how_to'
+  match "what_is_a_meeting_agenda", to: 'static_pages#what_is_a_meeting_agenda'
+  match "how_to_run_an_effective_meeting", to: 'static_pages#effective_meeting'
+  match "why_take_meeting_minutes", to: 'static_pages#why_take_meeting_minutes'
+  match "important_aspects_to_consider_for_meeting", to: 'static_pages#important_aspects_for_meeting'
 
 end
